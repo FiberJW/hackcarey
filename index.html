@@ -2,21 +2,50 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title> HackCarey </title>
-
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flappy PÜL</title>
+  <style media="screen">
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d500f9+0,007aff+100 */
+      background: #d500f9; /* Old browsers */
+      background: -moz-linear-gradient(top,  #d500f9 0%, #007aff 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #d500f9 0%,#007aff 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #d500f9 0%,#007aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d500f9', endColorstr='#007aff',GradientType=0 ); /* IE6-9 */
+    }
+    .game {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .instructions {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .screenshot {
+      height: 600px;
+    }
+  </style>
+  <script type="text/javascript" src="phaser.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-  <p>My favorite classes at school are my three consecutive free periods</p>
-  <h1>Important Links</h1>
-  <ul>
-    <li><a href="https://www.facebook.com/mindgrub/info/?tab=page_info" target="_blank">Mindgrub's Facebook Page</a></li>
-    <li><a href="http://74.125.224.72" target="_blank">Google via IP Address</a></li>
-    <li><a href="https://c9.io" target="_blank">Cloud 9</a></li>
-    <li><a href="https://github.com/mindgrub/hackcarey" target="_blank">Starting Files</a></li>
-    <li><a href="http://www.w3schools.com/tags/" target="_blank">HTML Tags</a></li>
-    <li><a href="http://phaser.io" target="_blank">Phaser Framework</a></li>
-  </ul>
+  <img class="screenshot" alt="App screenshot" src="./assets/Signup/Login Screen.png" />
+  <div class="game">
+    <p class="instructions">Welcome to Flappy PÜL</p>
+    <p class="instructions">Press the spacebar to jump</p>
+    <div id="gameDiv" />
+  </div>
 </body>
+
 </html>
